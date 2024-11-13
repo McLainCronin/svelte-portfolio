@@ -28,7 +28,7 @@
                 My <span class="text-violet-400">favorite tech</span> includes JavaScript (NEXT.JS or SvelteKit), Python (Django), and SQL (PostgreSQL). I'm also a fan of <span class="text-violet-400">tailwindcss</span> and <span class="text-violet-400">alpine.js</span>.
             </p>
             <a 
-                class="blueShadow mx-auto lg:mr-auto text-base sm:text-lg md:text-xl poppins relative overflow-hidden px-6 py-3 group rounded-full bg-white text-slate-950 cursor-pointer" 
+                class="blueShadow mx-auto lg:mx-0 lg:mr-auto lg:lm-0 text-base sm:text-lg md:text-xl poppins relative overflow-hidden px-6 py-3 group rounded-full bg-white text-slate-950 cursor-pointer" 
                 href="#https://www.linkedin.com/in/mclain-cronin-963781117/" 
                 target="_blank"
             >
@@ -100,5 +100,62 @@
                     </div>
                 {/each}
             </div>
+            <h5 class="text-2xl sm:text-3xl font-semibold text-center poppins">The <span class="text-violet-400 poppins">Complete</span> Package</h5>
+            <div class="flex flex-col overflow-x-scroll gap-10 max-w-[800px] mx-auto w-full">
+                <table class="bg-white text-slate-700 rounded text-center">
+                    <thead class="border-b border-solid border-slate-200">
+                        <tr>
+                            <th/>
+                            <th class="whitespace-nowrap p-2 px-4">Candidate #1</th>
+                            <th class="whitespace-nowrap p-2 px-4">Candidate #2</th>
+                            <th class="whitespace-nowrap p-2 px-4">Candidate #3</th>
+                            <th class="whitespace-nowrap bg-violet-700 text-white p-4 px-8">Me</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-solid border-slate-200">
+                            <td class="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold text-sm whitespace-nowrap">
+                                Dedication
+                            </td>
+                            <td><i class="fas fa-check text-slate-500"></i></td>
+                            <td><i class="fas fa-xmark text-slate-500"></i></td>
+                            <td><i class="fas fa-xmark text-slate-500"></i></td>
+                            <td><i class="fas fa-check text-green-500"></i></td>
+                        </tr>
+                        
+                        <tr class="border-b border-solid border-slate-200">
+                            <td class="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold text-sm whitespace-nowrap">
+                                Critical Thought
+                            </td>
+                            <td><i class="fas fa-xmark text-slate-500"></i></td>
+                            <td><i class="fas fa-check text-slate-500"></i></td>
+                            <td><i class="fas fa-xmark text-slate-500"></i></td>
+                            <td><i class="fas fa-check text-green-500"></i></td>
+                        </tr>
+                        <tr class="border-b border-solid border-slate-200">
+                            <td class="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold text-sm whitespace-nowrap">
+                                Interpersonal Skills
+                            </td>
+                            <td><i class="fas fa-xmark text-slate-500"></i></td>
+                            <td><i class="fas fa-check text-slate-500"></i></td>
+                            <td><i class="fas fa-check text-slate-500"></i></td>
+                            <td><i class="fas fa-check text-green-500"></i></td>
+                        </tr>
+                        <tr class="border-b border-solid border-slate-200">
+                            <td class="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold text-sm whitespace-nowrap">
+                                Programming Ability
+                            </td>
+                            <td><i class="fas fa-check text-slate-500"></i></td>
+                            <td><i class="fas fa-check text-slate-500"></i></td>
+                            <td><i class="fas fa-xmark text-slate-500"></i></td>
+                            <td><i class="fas fa-check text-green-500"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="mx-auto -mt-12 italic sm:hidden opacity-50">
+                <p>Scroll to see more &rarr;</p>
+            </div>
+            <p class="mx-auto">So why not invest?</p>
     </section>
 </main>
