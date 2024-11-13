@@ -2,10 +2,10 @@
     import Step from "./Step.svelte";
 
     let steps = [
-        {name: 'Fruit Shop', icon: 'fa-solid fa-code', description: 'This is a description of the project.'},
-        {name: 'Moodi', icon: 'fa-solid fa-code', description: 'This is a description of the project.'},
-        {name: 'Zen API', icon: 'fa-solid fa-code', description: 'This is a description of the project.'},
-        {name: 'Todos', icon: 'fa-solid fa-code', description: 'This is a description of the project.'},
+        {name: 'Fruit Shop', icon: 'fas fa-carrot', description: 'This is a description of the project.'},
+        {name: 'Moodi', icon: 'text-6xl fas fa-heart-circle-check', description: 'This is a description of the project.'},
+        {name: 'Zen API', icon: 'fas fa-seedling', description: 'This is a description of the project.'},
+        {name: 'Todos', icon: 'fas fa-list-ol', description: 'This is a description of the project.'},
     ]
 
 
@@ -49,13 +49,24 @@
         </a>
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-10">
             <Step step={steps[0]}>
-
+                <p>
+                    <strong class="text-violet-400">Fruit Shop</strong> is a project built on NEXT.JS and TailwindCSS. It's an e-commerce site that allows users to add items to their cart and checkout.
+                </p>
             </Step>
             <Step step={steps[1]}>
-
+                <p>
+                    <strong class="text-violet-400">Fruit Shop</strong> is a project built on NEXT.JS and TailwindCSS. It's an e-commerce site that allows users to add items to their cart and checkout.
+                </p>
             </Step>
             <Step step={steps[2]}>
-
+                <p>
+                    <strong class="text-violet-400">Fruit Shop</strong> is a project built on NEXT.JS and TailwindCSS. It's an e-commerce site that allows users to add items to their cart and checkout.
+                </p>
+            </Step>
+            <Step step={steps[3]}>
+                <p>
+                    <strong class="text-violet-400">Fruit Shop</strong> is a project built on NEXT.JS and TailwindCSS. It's an e-commerce site that allows users to add items to their cart and checkout.
+                </p>
             </Step>
         </div>
     </section>
