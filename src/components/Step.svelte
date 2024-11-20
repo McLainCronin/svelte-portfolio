@@ -9,8 +9,10 @@
     <h3 class="font-medium text-xl sm:text-2xl md:text-3xl">{step.name}</h3>
     <slot/>
     <div class="flex-1 flex justify-between gap-4 items-center">
-        <div class="p-2 ml-auto cursor-pointer hover:text-slate-950 duration-200 relative after:absolute after:top-0 after:h-0 after:right-full after:w-full after:h-full after:bg-white after:duration-200 hover:after:translate-x-full after:z-[-1] overflow-hidden rounded-3xl">
+        <button 
+            on:click={() => window.open(step.link, '_blank')} 
+            class="p-2 ml-auto cursor-pointer hover:text-slate-950 duration-200 relative after:absolute after:top-0 after:h-0 after:right-full after:w-full after:h-full after:bg-white after:duration-200 hover:after:translate-x-full after:z-[-1] overflow-hidden rounded-3xl">
             <p class="relative z-4">View project &rarr;</p>
-        </div>
+        </button>
     </div>
 </a>

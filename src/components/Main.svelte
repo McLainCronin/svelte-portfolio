@@ -2,10 +2,30 @@
     import Step from "./Step.svelte";
 
     let steps = [
-        {name: 'Fruit Shop', icon: 'fas fa-carrot', description: ' is an e-commerce site that allows users to add items to their cart and checkout. The shop is built on <span class="text-blue-400">Next.js</span> using <span class="text-blue-400">Zustand</span> for state management and <span class="text-blue-400">Stripe</span> for handling orders.'},
-        {name: 'Moodi', icon: 'text-6xl fas fa-heart-circle-check', description: ' is a web app that allows users to track their daily moods and view their trends over time. The app is developed using <span class="text-blue-400">Next.js</span>, styled with <span class="text-blue-400">TailwindCSS</span> for a vibrant design and integrates <span class="text-blue-400">Firebase</span> for secure user authentication.'},
-        {name: 'Zen API', icon: 'fas fa-seedling', description: ' is a functional API marketplace that allows users to purchase a single-use or subscription-based access to an API. The store is built on <span class="text-blue-400">Node.js</span> and <span class="text-blue-400">Express.js</span>, using <span class="text-blue-400">Stripe</span> for payment processing and <span class="text-blue-400">Firebase</span> to store and validate assigned API keys.'},
-        {name: 'NASA Image O.T.D.', icon: 'fas fa-rocket', description: ' is a web application that displays NASA\'s Image of the Day. Built with <span class="text-blue-400">React.js</span>, the app fetches images and descriptions from the <span class="text-blue-400">NASA API</span> and caches the data in a <span class="text-blue-400">NoSQL</span> database for optimized performance.'},
+        {
+            name: 'Fruit Shop',
+            link: 'https://mc-fruits.netlify.app/',
+            icon: 'fas fa-carrot',
+            description: ' is an e-commerce site that allows users to add items to their cart and checkout. The shop is built on <span class="text-blue-400">Next.js</span> using <span class="text-blue-400">Zustand</span> for state management and <span class="text-blue-400">Stripe</span> for handling orders.'
+        },
+        {
+            name: 'Moodi',
+            link: 'https://moodiapp.netlify.app/',
+            icon: 'text-6xl fas fa-heart-circle-check',
+            description: ' is a web app that allows users to track their daily moods and view their trends over time. The app is developed using <span class="text-blue-400">Next.js</span>, styled with <span class="text-blue-400">TailwindCSS</span> for a vibrant design and integrates <span class="text-blue-400">Firebase</span> for secure user authentication.'
+        },
+        {
+            name: 'Zen API',
+            link: 'https://zen-api.netlify.app/',
+            icon: 'fas fa-seedling',
+            description: ' is a functional API marketplace that allows users to purchase a single-use or subscription-based access to an API. The store is built on <span class="text-blue-400">Node.js</span> and <span class="text-blue-400">Express.js</span>, using <span class="text-blue-400">Stripe</span> for payment processing and <span class="text-blue-400">Firebase</span> to store and validate assigned API keys.'
+        },
+        {
+            name: 'NASA Image O.T.D.',
+            link: 'https://nasa-daily-image-project.netlify.app/',
+            icon: 'fas fa-rocket',
+            description: ' is a web application that displays NASA\'s Image of the Day. Built with <span class="text-blue-400">React.js</span>, the app fetches images and descriptions from the <span class="text-blue-400">NASA API</span> and caches the data in a <span class="text-blue-400">NoSQL</span> database for optimized performance.'
+        }
     ];
 
     let benefits = [
@@ -44,21 +64,21 @@
 
     <section id="projects" class="py-20 lg:py-32 flex flex-col gap-24">
         <div class="flex flex-col gap-2 text-center">
-            <h6 class="text-large sm:text-xl md:text-2xl">
-                A few of my <span class="text-blue-400">projects</span>:
-            </h6>
             <h3 class="font-semibold text-3xl sm:text-4xl md:text-5xl">
                 Interested to <span class="poppins text-blue-400">see</span> my work?
             </h3>
+            <h6 class="text-large sm:text-xl md:text-2xl">
+                A few of my <span class="text-blue-400">projects</span>:
+            </h6>
         </div>
-        <a href="#https://www.linkedin.com/in/mclain-cronin-963781117/" target="_blank" class="mx-auto px-4 py-2 rounded-md border border-solid border-white flex items-center gap-2 -mb-4 sm:-mb-0 -mt-10 hover:border-blue-700 duration-200" >
+        <!-- <a href="#https://www.linkedin.com/in/mclain-cronin-963781117/" target="_blank" class="mx-auto px-4 py-2 rounded-md border border-solid border-white flex items-center gap-2 -mb-4 sm:-mb-0 -mt-10 hover:border-blue-700 duration-200" >
             <i class="fa-regular fa-circle-play"></i>
             <p>Watch the video</p>
-        </a>
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-10">
+        </a> -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-10">
             {#each steps as step, i}
                 <Step {step}>
-                    <p>
+                    <p class="text-base md:text-lg">
                         <strong class="text-blue-400">{step.name}</strong>{@html step.description}
                     </p>
                 </Step>
@@ -67,7 +87,6 @@
     </section>
     <section id="about" class="py-20 pt-10 lg:pt-16 lg:py-32 flex flex-col gap-16 sm:gap-20 md:gap-24 relative">
         <div class="flex flex-col gap-2 text-center relative before:absolute before:top-0 before:left-0 before:w-2/3 before:h-1.5 before:bg-blue-700 after:absolute after:bottom-0 after:right-0 after:w-2/3 after:h-1.5 after:bg-blue-700 pt-6 pb-7">
-            <h6 class="text-lg sm:text-x md:text-2xl">Want to know more?</h6>
             <h3 class="font-semibold text-3xl smLtext-4xl md:text-5xl">
                 A bit <span class="poppins text-blue-400">about</span> me.
             </h3>
@@ -88,62 +107,8 @@
                     </div>
                 {/each}
             </div>
-            <h5 class="text-2xl sm:text-3xl font-semibold text-center poppins">The <span class="text-blue-400 poppins">Complete</span> Package</h5>
-            <div class="flex flex-col overflow-x-scroll gap-10 max-w-[800px] mx-auto w-full">
-                <table class="bg-white text-slate-700 rounded text-center">
-                    <thead class="border-b border-solid border-slate-200">
-                        <tr>
-                            <th/>
-                            <th class="whitespace-nowrap p-2 px-4">Candidate #1</th>
-                            <th class="whitespace-nowrap p-2 px-4">Candidate #2</th>
-                            <th class="whitespace-nowrap p-2 px-4">Candidate #3</th>
-                            <th class="whitespace-nowrap bg-blue-700 text-white p-4 px-8">Me</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="border-b border-solid border-slate-200">
-                            <td class="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold text-sm whitespace-nowrap">
-                                Dedication
-                            </td>
-                            <td><i class="fas fa-check text-slate-500"></i></td>
-                            <td><i class="fas fa-xmark text-slate-500"></i></td>
-                            <td><i class="fas fa-xmark text-slate-500"></i></td>
-                            <td><i class="fas fa-check text-green-500"></i></td>
-                        </tr>
-                        
-                        <tr class="border-b border-solid border-slate-200">
-                            <td class="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold text-sm whitespace-nowrap">
-                                Critical Thought
-                            </td>
-                            <td><i class="fas fa-xmark text-slate-500"></i></td>
-                            <td><i class="fas fa-check text-slate-500"></i></td>
-                            <td><i class="fas fa-xmark text-slate-500"></i></td>
-                            <td><i class="fas fa-check text-green-500"></i></td>
-                        </tr>
-                        <tr class="border-b border-solid border-slate-200">
-                            <td class="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold text-sm whitespace-nowrap">
-                                Interpersonal Skills
-                            </td>
-                            <td><i class="fas fa-xmark text-slate-500"></i></td>
-                            <td><i class="fas fa-check text-slate-500"></i></td>
-                            <td><i class="fas fa-check text-slate-500"></i></td>
-                            <td><i class="fas fa-check text-green-500"></i></td>
-                        </tr>
-                        <tr class="border-b border-solid border-slate-200">
-                            <td class="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold text-sm whitespace-nowrap">
-                                Programming Ability
-                            </td>
-                            <td><i class="fas fa-check text-slate-500"></i></td>
-                            <td><i class="fas fa-check text-slate-500"></i></td>
-                            <td><i class="fas fa-xmark text-slate-500"></i></td>
-                            <td><i class="fas fa-check text-green-500"></i></td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="flex flex-col gap-2 text-center relative pt-6">
+                <h6 class="text-lg sm:text-x md:text-2xl">Want to know more?</h6>
             </div>
-            <div class="mx-auto -mt-12 italic sm:hidden opacity-50">
-                <p>Scroll to see more &rarr;</p>
-            </div>
-            <p class="mx-auto">So why not invest?</p>
     </section>
 </main>
