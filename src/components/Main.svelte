@@ -100,7 +100,7 @@
                 A bit <span class="poppins text-blue-400">about</span> me.
             </h3>
         </div>
-            <p class="mx-auto poppins font-semibold text-lg sm:text-xl md:text-2xl">Text that tells alllllll about me</p>
+            <!-- <p class="mx-auto poppins font-semibold text-lg sm:text-xl md:text-2xl">Text that tells alllllll about me</p> -->
             <div class="flex flex-col gap-20 w-full mx-auto max-w-[800px]">
                 {#each benefits as benefit, index}
                     <div class="flex gap-6 sm:gap-8">
