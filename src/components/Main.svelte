@@ -29,10 +29,23 @@
     ];
 
     let benefits = [
-        {name: 'Self taught developer', description: 'This is a description of my benefits.'},
-        {name: 'A product design & UX fanatic', description: 'This is a description of my benefits.'},
-        {name: 'An excellent communicator', description: 'This is a description of my benefits.'},
-        {name: 'A very cool guy', description: 'This is a description of my benefits.'},
+        {
+            name: 'Self-taught developer',
+            description: 'As a self-taught developer, I have proactively combined self-directed learning with formal education to master a diverse range of technologies and skills. This approach has enabled me to gain valuable real-world experience while building upon the technical foundations provided by traditional education.'
+        },
+        {
+            name: 'Passionate and adaptable',
+            description: 'By continuously seeking out current industry trends and technologies, I adapt to new challenges and opportunities with ease. My passion for software development drives me to continuously improve my skills and knowledge, ensuring that I can deliver top-tier solutions that meet the needs of my team and projects.'
+        },
+        {
+            name: 'Collaborative and Approachable',
+            description: 'I am a team player who thrives in collaborative environments. I am always open to feedback and eager to learn from my peers. My approachable nature and strong communication skills enable me to build strong relationships with colleagues and stakeholders, fostering a positive and inclusive work culture.'
+        },
+        {
+            name: 'Creatively Driven',
+            description: 'I aim to leverage my full-stack development skills to build impactful software that enhances user experiences while adhering ethical standards. I excel in dynamic team environments where I can contribute to cutting-edge projects and continuously evolve as a developer.'
+            
+        }
     ];
 
 
@@ -107,8 +120,16 @@
                     </div>
                 {/each}
             </div>
-            <div class="flex flex-col gap-2 text-center relative pt-6">
+            <div class="flex flex-col gap-12 text-center relative pt-6">
                 <h6 class="text-lg sm:text-x md:text-2xl">Want to know more?</h6>
+                <a 
+                    href="/path/to/your/resume.pdf" 
+                    target="_blank" 
+                    class="blueShadow mx-auto text-md md:text-lg poppins relative overflow-hidden px-6 py-3 group rounded-full bg-white text-slate-950 cursor-pointer"
+                >
+                    <div class="absolute top-0 right-full w-full h-full bg-blue-600 opacity-20 group-hover:translate-x-full duration-200"></div>
+                    <h4 class="relative z-9">View Résumé &rarr;</h4>
+                </a>
             </div>
     </section>
 </main>

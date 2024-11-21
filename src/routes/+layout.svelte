@@ -13,9 +13,9 @@
 </script>
 
 
-<div class="relative flex flex-col max-w-[1400px] mx-auto w-full text-sm sm:text-base min-h-screen">
-	<div class={"fixed bottom-0 w-full duration-200 flex p-10 z-[10] " + (y > 0 ? ' opacity-full pointer-events-auto' : ' pointer-events-none opacity-0')}>
-		<button on:click={goTop} class="p-3 ml-auto rounded-full bg-slate-900 text-blue-400 px-2 sm:px-4 hover:bg-slate-800 cursor-pointer">
+<div class="relative flex flex-col max-w-[1400px] lg:max-w-none mx-auto w-full text-sm sm:text-base min-h-screen">
+	<div class={"fixed bottom-0 w-full duration-200 flex p-10 z-[10] " + (y > 0 ? ' opacity-100 pointer-events-auto' : ' pointer-events-none opacity-0')}>
+		<button on:click={goTop} class="p-3 ml-auto rounded-full bg-slate-900 text-blue-400 px-3.5 hover:bg-slate-800 cursor-pointer">
 			<i class="fa-solid fa-arrow-up grid place-items-center aspect-square"></i>
 		</button>
 	</div>
