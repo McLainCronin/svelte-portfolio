@@ -119,7 +119,7 @@
             <div class="flex flex-col gap-12 text-center relative pt-6">
                 <h6 class="text-lg sm:text-x md:text-2xl">Want to know more?</h6>
                 <a 
-                    href="/path/to/your/resume.pdf" 
+                    href="/mclain-cronin-resume.pdf" 
                     target="_blank" 
                     class="blueShadow mx-auto text-md md:text-lg poppins relative overflow-hidden px-6 py-3 group rounded-full bg-white text-slate-950 cursor-pointer"
                 >

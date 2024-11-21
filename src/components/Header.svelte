@@ -2,9 +2,9 @@
     export let y;
 
     let tabs = [
-        {name: 'Projects', link: '#projects'},
-        {name: 'About Me', link: '#about'},
-        {name: 'Résumé', link: '#resume'},
+        {name: 'Projects', link: '#projects', target: '_self'},
+        {name: 'About Me', link: '#about', target: '_self'},
+        {name: 'Résumé', link: '/mclain-cronin-resume.pdf', target: '_blank'},
     ];
 </script>
 
@@ -14,7 +14,7 @@
     </h1>
     <div class="sm:flex ml-auto pr-4 items-center gap-4 hidden">
         {#each tabs as tab, index}
-            <a href={tab.link} class="px-3 duration-200 hover:text-blue-400">
+            <a href={tab.link} target={tab.target} class="px-3 duration-200 hover:text-blue-400">
                 <p>{tab.name}</p>
             </a>
         {/each}
