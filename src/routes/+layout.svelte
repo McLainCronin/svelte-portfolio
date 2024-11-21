@@ -19,9 +19,11 @@
 			<i class="fa-solid fa-arrow-up grid place-items-center aspect-square"></i>
 		</button>
 	</div>
-	<Header y={y}/>
-	<slot />
-	<Footer y={y}/>
+	<div class="max-w-[1500px] self-center">
+		<Header y={y}/>
+		<slot />
+		<Footer y={y}/>
+	</div>
 </div>
 
 
