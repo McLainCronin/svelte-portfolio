@@ -63,7 +63,7 @@
             </p>
             <a 
                 class="blueShadow mx-auto lg:mx-0 lg:mr-auto lg:lm-0 text-base sm:text-lg md:text-xl poppins relative overflow-hidden px-6 py-3 group rounded-full bg-white text-slate-950 cursor-pointer" 
-                href="#https://www.linkedin.com/in/mclain-cronin-963781117/" 
+                href="mailto:cronin97@gmail.com" 
                 target="_blank"
             >
                 <div class="absolute top-0 right-full w-full h-full bg-blue-600 opacity-20 group-hover:translate-x-full duration-200"></div>
@@ -84,10 +84,6 @@
                 A few of my <span class="text-blue-400">projects</span>:
             </h6>
         </div>
-        <!-- <a href="#https://www.linkedin.com/in/mclain-cronin-963781117/" target="_blank" class="mx-auto px-4 py-2 rounded-md border border-solid border-white flex items-center gap-2 -mb-4 sm:-mb-0 -mt-10 hover:border-blue-700 duration-200" >
-            <i class="fa-regular fa-circle-play"></i>
-            <p>Watch the video</p>
-        </a> -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-10">
             {#each steps as step, i}
                 <Step {step}>
