@@ -3,12 +3,6 @@
 
     let steps = [
         {
-            name: 'Fruit Shop',
-            link: 'https://mc-fruits.netlify.app/',
-            icon: 'fas fa-carrot',
-            description: ' is an e-commerce site that allows users to add items to their cart and checkout. The shop is built on <span class="text-blue-400">Next.js</span> using <span class="text-blue-400">Zustand</span> for state management and <span class="text-blue-400">Stripe</span> for handling orders.'
-        },
-        {
             name: 'Moodi',
             link: 'https://moodiapp.netlify.app/',
             icon: 'text-6xl fas fa-heart-circle-check',
@@ -19,6 +13,12 @@
             link: 'https://zen-api.netlify.app/',
             icon: 'fas fa-seedling',
             description: ' is a functional API marketplace that allows users to purchase a single-use or subscription-based access to an API. The store is built on <span class="text-blue-400">Node.js</span> and <span class="text-blue-400">Express.js</span>, using <span class="text-blue-400">Stripe</span> for payment processing and <span class="text-blue-400">Firebase</span> to store and validate assigned API keys.'
+        },
+        {
+            name: 'Fruit Shop',
+            link: 'https://mc-fruits.netlify.app/',
+            icon: 'fas fa-carrot',
+            description: ' is an e-commerce site that allows users to add items to their cart and checkout. The shop is built on <span class="text-blue-400">Next.js</span> using <span class="text-blue-400">Zustand</span> for state management and <span class="text-blue-400">Stripe</span> for handling orders.'
         },
         {
             name: 'NASA Image O.T.D.',

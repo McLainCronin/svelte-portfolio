@@ -6,7 +6,7 @@
         <a href="mailto:cronin97@gmail.com" class="text-white text-2xl">
             <i class="fas fa-envelope text-3xl sm:text-4xl hover:scale-125 duration-200"></i>
         </a>
-        <a href="https://www.linkedin.com/in/mclain-cronin-963781117/" target="_blank" class="text-blue-400 text-2xl">
+        <a href="https://www.linkedin.com/in/mclain-cronin/" target="_blank" class="text-blue-400 text-2xl">
             <i class="fab fa-linkedin text-3xl sm:text-4xl hover:scale-125 duration-200"></i>
         </a>
         <a href="https://github.com/McLainCronin" target="_blank" class="text-white text-2xl">
